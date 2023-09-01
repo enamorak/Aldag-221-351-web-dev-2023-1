@@ -1,0 +1,44 @@
+body {
+    margin: 0; /* убираем внешний отступ (по бокам) */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    padding: 0; /* убираем отступ слева от списка */
+    margin: 0; /* убираем область отпуста сверху, которая образуется из-за списка */
+    list-style: none; /* убираем точки */
+}
+
+.header li { /* добавили header, чтобы ol в body выравнивался не в одну линию, как меню*/
+    display: inline; /* выравниванием меню с одну строку */
+    margin-right: 60px; /* отступы между пунктами меню */
+}
+
+li:last-child { /* псевдокласс, last child применяется к ul, т.к. li вложен в ul*/
+    margin-right: 0;
+}
+
+.header { /* обращение не к header, а к классу header */
+    background-color: #ff4500;
+    color: black;
+    padding: 20px 0; /* составное свойство, чтобы не прописывать для 4 сторон отдельно */
+    letter-spacing: 2px; /* добавление пробелов между буквами */
+    text-transform: uppercase; /* преобразование текста в верхний регистр */
+    border-bottom: 5px solid #e33c00; /* добавление нижней границы */
+    box-shadow: 0px 0px 10px #ff4500(0, 0, 0, 0.5); /* добавление тени */
+    /* font-size: 1em;  размер шрифта относительно родителя, 20 px - обычно стандартно,
+    1em - как у родителя, если у всех будет 0.5em, то это бесконечное уменьшение у наследников*/
+    font-size: 1.25rem;
+}
+
+/* контекстный селектор: */
+.main-menu a { /* применяем только к тегам а внутри меню, вложенность не имеет значения*/
+    text-decoration: none; /* убираем подчеркивания */
+    color: beige; /* цвет ссылок */
+    font-weight: bold; /* жирность начертания ссылок*/
+}
+
+.container {
+    max-width: 75%; /* ограничиваем область nav*/
+    margin: 0 auto; /* отступ сверху и снизу нам не нужен, слева и справа хотим 25% распределить автоматом*/
+}
