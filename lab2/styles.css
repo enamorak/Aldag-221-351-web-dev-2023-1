@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #161616;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+input[type="radio"] + label:before,
+input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  border: 2px solid #555;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+  background-color: #4CAF50;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #999;
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="file"] {
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
