@@ -175,3 +175,9 @@ button[type="submit"]:hover {
   transform: scaleX(0); 
   transition: transform 0.3s ease-in-out; 
 }
+
+.required-field {
+  color: red;
+  font-size: 12px;
+  margin-left: 5px;
+}
