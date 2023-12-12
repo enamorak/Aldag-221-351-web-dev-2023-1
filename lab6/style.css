@@ -1,0 +1,61 @@
+header { 
+    background-color: #FF0000; 
+    padding: 40px; 
+    color: #FFFFFF; 
+    text-align: center; 
+    font-size: 24px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+} 
+  
+#features { 
+    background-color: #990000; 
+    padding: 40px; 
+} 
+
+#disgusting { 
+    background-color: #c30000; 
+    padding: 40px; 
+} 
+
+#disgusting p { 
+    color: #ffffff;
+} 
+
+#disgusting h2 { 
+    text-align: center; 
+    color: #ff6666;
+    text-transform: uppercase; 
+} 
+
+#features h2 { 
+    text-align: center; 
+    color: #ff6767; 
+    text-transform: uppercase; 
+} 
+
+#features p { 
+    color: #ffffff; 
+} 
+  
+#contact { 
+    background-color: #000000; 
+    padding: 40px; 
+    color: #FF0000; 
+} 
+  
+footer { 
+    background-color: #FF0000; 
+    padding: 20px; 
+    color: #000000; 
+    text-align: center; 
+} 
+  
+footer p { 
+    margin: 0; 
+}
+
+.social-media {
+    float: right;
+    margin-left: 20px;
+}
