@@ -1,19 +1,13 @@
-header, nav, footer {
-    display: none;
-}
-
-main {
-    margin-top: 0;
-}
-
-section.sidebar {
-    display: none;
-}
-
-.flex-container {
-    justify-content: flex-start;
-}
-
-.character, .movie, .image {
-    margin-bottom: 0;
-}
+body {
+    font-size: 12pt;
+  }
+  
+  main {
+    display: block;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+  }
